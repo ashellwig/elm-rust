@@ -17,13 +17,12 @@ fn main() {
     let mut mount = Mount::new();
 
     // Serve the shared JS/CSS at /public/src/
-    mount.mount("/", Static::new(Path::new("target/doc/")));
+    mount.mount("/", Static::new(Path::new("public/javascript/")));
+    mount.mount("/", Static::new(Path::new("public/")));
     // Serve the static file docs at /doc/
-    mount.mount("/doc/", Static::new(Path::new("target/doc/staticfile/")));
-    // Serve the source code at /src/
-    mount.mount("/src/", Static::new(Path::new("target/doc/src/staticfile/lib.rs.html")));
+    mount.mount("/home/", Static::new(Path::new("target/doc/staticfile/")));
 
-    println!("Doc server running on http://localhost:3000/doc/");
+    println!("Web server running on http://localhost:3000/home/");
 
     Iron::new(mount).http("127.0.0.1:3000").unwrap();
 }

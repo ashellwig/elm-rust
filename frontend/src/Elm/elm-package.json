@@ -4,9 +4,8 @@
     "repository": "https://github.com/ashellwig/elm-rust.git",
     "license": "BSD3",
     "source-directories": [
-        "src",
-        "src/Elm",
-        "src/Elm/Components"
+        "./src/Elm",
+        "./src/Elm/Components"
     ],
     "exposed-modules": [],
     "dependencies": {

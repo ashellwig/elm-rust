@@ -10,9 +10,11 @@
 </head>
 
 <body>
-    <script src="./javascript/index.js"></script>
+    <div id="main"></div>
+    <script src="javascript/main.js"></script>
     <script>
-        app = Elm.Main.fullscreen();
+        var node = document.getElementById('main');
+        var app = Elm.Main.embed(node);
     </script>
 </body>
 

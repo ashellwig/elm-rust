@@ -3,10 +3,13 @@ name = "web-trying"
 version = "0.1.0"
 authors = ["Ashton Hellwig <ahellwig.dev@gmail.com>"]
 
+[[bin]]
+name = "web-trying"
+path = "backend/src/main.rs"
+
 [dependencies]
 iron = "*"
 staticfile = "*"
 
 [dependencies.mount]
-
 git = "https://github.com/iron/mount.git"

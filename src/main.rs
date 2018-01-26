@@ -16,7 +16,7 @@ use mount::Mount;
 fn main() {
     let mut mount = Mount::new();
 
-    // Serve the shared JS/CSS at /
+    // Serve the shared JS/CSS at /public/src/
     mount.mount("/", Static::new(Path::new("target/doc/")));
     // Serve the static file docs at /doc/
     mount.mount("/doc/", Static::new(Path::new("target/doc/staticfile/")));

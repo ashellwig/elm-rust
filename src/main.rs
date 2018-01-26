@@ -18,10 +18,10 @@ fn main() {
     let mut mount = Mount::new();
 
     // Serve the shared JS/CSS at /public/javascript/
-    mount.mount("/", Static::new(Path::new("public/javascript/")));
+    mount.mount("/", Static::new(Path::new("frontend/public/javascript/")));
 
     // Serve the static file docs at /home/
-    mount.mount("/home/", Static::new(Path::new("public/")));
+    mount.mount("/home/", Static::new(Path::new("frontend/public/")));
 
     // Log
     println!("Web server running on http://localhost:3000/home/");

@@ -1,0 +1,12 @@
+[package]
+name = "web-trying"
+version = "0.1.0"
+authors = ["Ashton Hellwig <ahellwig.dev@gmail.com>"]
+
+[dependencies]
+iron = "*"
+staticfile = "*"
+
+[dependencies.mount]
+
+git = "https://github.com/iron/mount.git"

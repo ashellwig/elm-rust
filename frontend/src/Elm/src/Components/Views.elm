@@ -8,7 +8,6 @@ import Html.Attributes exposing (class, href, style)
 import Material
 import Material.Button as Button
 import Material.Options as Options exposing (css)
-import Material.Scheme
 
 
 -- VIEW
@@ -55,7 +54,6 @@ view model =
             [ Options.onClick Reset ]
             [ text "Reset" ]
         ]
-        |> Material.Scheme.top
 
 
 

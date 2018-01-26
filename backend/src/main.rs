@@ -18,7 +18,7 @@ fn main() {
     let mut mount = Mount::new();
 
     // Serve the shared JS/CSS at /public/javascript/
-    mount.mount("/", Static::new(Path::new("frontend/public/javascript/")));
+    mount.mount("/", Static::new(Path::new("frontend/public/javascript/main.js")));
 
     // Serve the static file docs at /home/
     mount.mount("/home/", Static::new(Path::new("frontend/public/index.html")));

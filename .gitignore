@@ -1,3 +1,6 @@
+# Elm
 elm-stuff/
+
+# Rust
 /target/
 **/*.rs.bk

@@ -1,10 +1,12 @@
 {
     "version": "0.1.0",
-    "summary": "Elm-counter with elm-mdl and rust backend",
+    "summary": "helpful summary of your project, less than 80 characters",
     "repository": "https://github.com/ashellwig/elm-rust.git",
     "license": "BSD3",
     "source-directories": [
-        "./src"
+        "src",
+        "src/Elm",
+        "src/Elm/Components"
     ],
     "exposed-modules": [],
     "dependencies": {
